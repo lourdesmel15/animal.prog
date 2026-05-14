@@ -1,26 +1,19 @@
-class Animal:
-    def hablar(self):
-     print ("Este animal emite un sonido")
+class Veterinario:
+    def tipo_animal(self):
+     input("Su animal es un perro o un gato")
+     input("Que raza es su animal")
+     input("Escribe el nombre del animal")
 
-class Perro(Animal):
+class perro(Veterinario):
     def ladrar(self):
-     print ("Guau Guau")
+     print ("El perro ladra ")
+     print ("El ppero es un dogo argentino")
+     print ("El perro se llama rocko ")
 
-class gato(Animal):
+
+class gato(Veterinario):
     def maullar(self):
-     print ("miau miau")
+     print ("El gato maulla")
+     print("El gato es un gato persa ")
+     print("El gato se llama michi")
 
-mi_perro= Perro ()
-mi_perro.hablar()
-mi_perro.ladrar()
-
-mi_gato= gato ()
-mi_gato.hablar()
-mi_gato.maullar()
-
-Animal = input("Escribe Perro o gato")
-
-if Animal== Perro:
-    print("Este animal dice Guau Guau")
-else:
-    print("Este animal dice miau miau")
